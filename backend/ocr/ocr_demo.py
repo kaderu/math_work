@@ -11,7 +11,8 @@ from paddleocr import PaddleOCR, draw_ocr
 # 例如`ch`, `en`, `fr`, `german`, `korean`, `japan`
 ocr = PaddleOCR(use_angle_cls=True, lang="ch")  # need to run only once to download and load model into memory
 img_path = 'source/looong.jpg'
-img_path = 'source/640_p1.jpg'
+img_path = 'source/640_p4.jpg'
+img_path = 'source/640.jpg'
 result = ocr.ocr(img_path, cls=True)
 for idx in range(len(result)):
     res = result[idx]
